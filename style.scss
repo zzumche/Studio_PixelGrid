@@ -101,7 +101,7 @@ h3 {
         margin: 0;
     }
 
-    img {
+    .img {
         background-image: url(assets/fi-sr-envelope-white.svg);
         aspect-ratio: 1;
         height: 20px;
@@ -113,7 +113,7 @@ h3 {
         background-color: white;
         color: $primary_color;
 
-        img {
+        .img {
             background-image: url(assets/fi-sr-envelope-blue.svg);
         }
     }
@@ -122,8 +122,10 @@ h3 {
         background-color: $secundary_color;
         border: 1px solid $secundary_color;
 
-        img {
+        .img {
             background-image: url(assets/fi-sr-flame-white.svg);
+            height: 20px;
+            width: 20px;
         }
 
         &:hover {
@@ -131,7 +133,7 @@ h3 {
             background-color: white;
             color: $secundary_color;
 
-            img {
+            .img {
                 background-image: url(assets/fi-sr-flame-yellow.svg);
             }
         }
@@ -875,12 +877,14 @@ footer {
     }
 
     .btn {
-        img {
+        .img {
             background-image: url(assets/fi-sr-envelope-white.svg) !important;
+            height: 20px;
+            width: 20px;
         }
 
         &:hover {
-            img {
+            .img {
                 background-image: url(assets/fi-sr-envelope-yellow.svg) !important;
             }
         }
@@ -987,8 +991,10 @@ footer {
             background-color: white;
             color: $primary_color; 
 
-            img {
+            .img {
                 background-image: url(assets/fi-sr-envelope-blue.svg);
+                height: 20px;
+                width: 20px;
             }
 
             &:hover {

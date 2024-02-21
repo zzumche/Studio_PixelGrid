@@ -92,7 +92,7 @@ h3 {
   font-size: 1vw;
   margin: 0;
 }
-.btn img {
+.btn .img {
   background-image: url(assets/fi-sr-envelope-white.svg);
   aspect-ratio: 1;
   height: 20px;
@@ -103,22 +103,24 @@ h3 {
   background-color: white;
   color: #023047;
 }
-.btn:hover img {
+.btn:hover .img {
   background-image: url(assets/fi-sr-envelope-blue.svg);
 }
 .btn.yellow {
   background-color: #FFB703;
   border: 1px solid #FFB703;
 }
-.btn.yellow img {
+.btn.yellow .img {
   background-image: url(assets/fi-sr-flame-white.svg);
+  height: 20px;
+  width: 20px;
 }
 .btn.yellow:hover {
   transition: all 0.5s;
   background-color: white;
   color: #FFB703;
 }
-.btn.yellow:hover img {
+.btn.yellow:hover .img {
   background-image: url(assets/fi-sr-flame-yellow.svg);
 }
 
@@ -742,10 +744,12 @@ footer .input {
   display: flex;
   flex-direction: column;
 }
-footer .btn img {
+footer .btn .img {
   background-image: url(assets/fi-sr-envelope-white.svg) !important;
+  height: 20px;
+  width: 20px;
 }
-footer .btn:hover img {
+footer .btn:hover .img {
   background-image: url(assets/fi-sr-envelope-yellow.svg) !important;
 }
 
@@ -809,8 +813,10 @@ footer .btn:hover img {
   background-color: white;
   color: #023047;
 }
-.dark_mode .btn:not(.yellow) img {
+.dark_mode .btn:not(.yellow) .img {
   background-image: url(assets/fi-sr-envelope-blue.svg);
+  height: 20px;
+  width: 20px;
 }
 .dark_mode .btn:not(.yellow):hover {
   color: #219EBC;
