@@ -753,6 +753,8 @@ footer {
     background-color: $primary_color;
     color: white;
     display: flex;
+    z-index: 2;
+    position: relative;
 
     input, textarea {
         height: 70px;

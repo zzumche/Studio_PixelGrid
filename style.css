@@ -643,6 +643,8 @@ footer {
   background-color: #023047;
   color: white;
   display: flex;
+  z-index: 2;
+  position: relative;
 }
 footer input, footer textarea {
   height: 70px;
