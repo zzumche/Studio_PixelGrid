@@ -35,10 +35,6 @@ a {
     color: $primary_color;
     transition: $hover_anim;
 
-    @media (max-width: 1200px) {
-        font-size: 26px;
-    }
-
     &:hover {
         color: $hover_color;
         transition: $hover_anim;
@@ -52,8 +48,8 @@ p {
 }
 
 h1 {
-    font-size: 4.5rem;
-    line-height: 5rem;
+    font-size: 3.5vw;
+    line-height: 4vw;
 }
 
 h2 {
@@ -518,7 +514,6 @@ header {
 
     a {
         text-transform: uppercase;
-        font-size: 20px;
 
         &.contact_btn {
             background-color: $primary_color;
@@ -655,10 +650,11 @@ header {
 
         .card-row {
             display: flex;
-            gap: 50px;
+            flex-wrap: wrap;
+            gap: 2.5vw;
 
             .card {
-                width: 100%;
+                width: 31%;
                 aspect-ratio: 1/1.5;
                 border-radius: 3rem;
                 background-repeat: no-repeat;
@@ -1057,6 +1053,139 @@ footer {
             background: linear-gradient(rgba(16, 33, 41, 0.9), rgba(16, 33, 41, 0.95)), url(assets/footer-img.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+        }
+    }
+}
+
+//tablet
+@media (max-width: 1765px) {
+    h2 {
+        font-size: 54px;
+        line-height: 64px;
+    }
+
+    h3 {
+        font-size: 40px;
+        line-height: 64px;
+    }
+
+    .works {
+        h2 {
+            width: 70%;
+        }
+
+        .smallest-btn {
+            width: 100% !important;
+            height: 65px !important;
+            background-size: 30px !important;
+        }
+
+        .works_cards {
+            .title-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card-row {
+                gap: 35px;
+            }
+        }
+    } 
+}
+
+
+//between- tablet and mobile
+@media (max-width: 1313px) {
+    .spacing {
+        margin: 100px 8% 100px 15%;
+    }
+
+    a, p {
+
+        &:not(.big-greetings) {
+            font-size: 16px !important;
+        }
+    }
+
+    .over-title {
+        font-size: 13px;
+    }
+
+     .hero {
+        flex-direction: column-reverse;
+
+        .hero_right_content {
+            max-width: unset;
+        }
+
+        .hero_left_content {
+            img {
+                width: 50vw;
+            }
+        }
+     }
+
+     .about-me {
+        flex-direction: column;
+
+        img {
+            position: relative;
+            width: 100%;
+        }
+
+        .about-me-content {
+            width: 100%;
+            margin-left: unset;
+        }
+     }
+
+    .aspire {
+        margin: 200px 0 100px 0;
+
+        p {
+            padding: 200px 0;
+            font-size: 3vw !important;
+            line-height: 3.5vw;
+        }
+    }
+
+    .works {
+        .card-row {
+            .card {
+                width: 47% !important;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 200px;
+        flex-direction: column;
+
+        .footer-left {
+            width: 100%;
+
+            .footer-left-content {
+                padding: 100px 8% 100px 15%;
+                margin: 0;
+                width: calc(100% - 23%);
+            }
+        }
+
+        .footer-right {
+            width: calc(100% - 23%);
+            padding: 100px 8% 100px 15%;
+        }
+    }
+}
+
+
+//mobile
+@media (max-width: 773px) {
+    .works {
+        .card-row {
+            .card {
+                width: 100% !important;
+            }
         }
     }
 }
