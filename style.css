@@ -663,7 +663,7 @@ footer label {
   order: -1;
   padding-left: 5px;
   transition: all 0.3s ease-in;
-  transform: translate(0.2vw, 0.8vw);
+  transform: translate(0.2vw, 15px);
   pointer-events: none;
   color: #023047;
   z-index: 1;
@@ -887,6 +887,7 @@ footer .btn:hover .img {
   }
   a:not(.big-greetings), p:not(.big-greetings) {
     font-size: 16px !important;
+    line-height: 24px;
   }
   .over-title {
     font-size: 13px;
@@ -940,7 +941,114 @@ footer .btn:hover .img {
   }
 }
 @media (max-width: 773px) {
+  h1 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  p, a {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  .side-menu {
+    display: none;
+  }
+  .btn {
+    align-self: center;
+  }
+  .over-title {
+    align-self: center;
+  }
+  .works .title_button {
+    grid-template-columns: none;
+    justify-items: center;
+    margin-bottom: 40px;
+  }
+  .works .title_button .line {
+    display: none;
+  }
+  .works h2 {
+    width: 100%;
+  }
+  .works .works_cards {
+    margin-top: 40px;
+  }
   .works .card-row .card {
     width: 100% !important;
+  }
+  .works .card-row .card .title-row {
+    flex-direction: row;
+  }
+  .works .card-row .card .title-row .smallest-btn {
+    width: 80px !important;
+  }
+  .spacing {
+    margin: 60px 5%;
+  }
+  header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  header nav {
+    gap: 16px;
+  }
+  header .contact_btn {
+    background-color: transparent !important;
+    border: none !important;
+    color: #023047 !important;
+    padding: 0 !important;
+  }
+  .hero .hero_right_content {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .hero .big-greetings {
+    font-size: 50px;
+    line-height: 44px;
+  }
+  .hero img {
+    width: 70vw !important;
+  }
+  .hero .buttons {
+    flex-direction: column;
+  }
+  .about-me .about-me-content {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .aspire {
+    margin: 60px 0;
+  }
+  .aspire p {
+    padding: 60px 0;
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+  footer {
+    margin-top: 60px;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer .mb-6:not(.input) {
+    align-self: center;
+  }
+  footer .footer-contacts {
+    align-items: center;
+  }
+  footer label {
+    font-size: 16px;
+    transform: translate(1.2vw, 35px);
+  }
+  footer label.moveUp {
+    font-size: 14px !important;
   }
 }/*# sourceMappingURL=style.css.map */

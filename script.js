@@ -121,3 +121,14 @@ document.querySelectorAll('input').forEach(function(input) {
       }
   });
 });
+
+document.querySelectorAll('textarea').forEach(function(textarea) {
+  textarea.addEventListener('focus', function() {
+      this.nextElementSibling.classList.add('moveUp');
+  });
+  textarea.addEventListener('focusout', function() {
+      if (!this.value) {
+          this.nextElementSibling.classList.remove('moveUp');
+      }
+  });
+});
